@@ -66,16 +66,20 @@ VALUES ('O que é necessário para doar sangue?',
         'D) Estar saudável e bem alimentado',
         'D');
 
-INSERT INTO NOTICIA (NOME_AUTOR, NOTICIA, RESUMO, TITULO) VALUES (
-                                                                     'Matheus Saleh',
-                                                                     SUBSTRING('Em uma iniciativa revolucionária para incentivar a doação de sangue, a cidade fictícia lançou uma campanha que está chamando a atenção de doadores em todo o país. Em vez das tradicionais unidades móveis de coleta de sangue, a cidade transformou seu centro em um parque de diversões médico.', 1, 255),
-                                                                     'Essa abordagem criativa não apenas aumentou o número de doadores, mas também tornou a doação de sangue uma experiência divertida e envolvente para todos.',
-                                                                     'Campanha Inovadora de Doação de Sangue Atrai Doadores em Massa'
-                                                                 );
 
-INSERT INTO NOTICIA (NOME_AUTOR, NOTICIA, RESUMO, TITULO) VALUES (
-                                                                  'Matheus Saleh',
-                                                                  SUBSTRING('Os robôs, equipados com tecnologia de última geração, são capazes de determinar com precisão a quantidade necessária de sangue, escolher a melhor veia para a coleta e administrar anestesia local, garantindo um procedimento praticamente indolor para os doadores.', 1, 255),
-                                                                  'Em uma grande revolução na medicina, a cidade fictícia Futurista inaugurou o primeiro banco de sangue totalmente automatizado do mundo.',
-                                                                  'Banco de Sangue do Futuro: Robôs Iniciam Coleta de Sangue Automatizada'
-                                                                 )
+-- Inserir as notícias
+INSERT INTO NOTICIA (NOME_AUTOR, NOTICIA, RESUMO, TITULO) VALUES
+    ('Matheus Saleh', SUBSTRING('Os robôs, equipados com tecnologia de última geração, são capazes de determinar com precisão a quantidade necessária de sangue, escolher a melhor veia para a coleta e administrar anestesia local, garantindo um procedimento praticamente indolor para os doadores.', 1, 255), 'Em uma grande revolução na medicina, a cidade fictícia Futurista inaugurou o primeiro banco de sangue totalmente automatizado do mundo.', 'Banco de Sangue do Futuro: Robôs Iniciam Coleta de Sangue Automatizada');
+
+-- Inserir as perguntas
+INSERT INTO PERGUNTA_PARA_ELEGIBILIDADE (TITULO, PERGUNTA, OPCAO1, OPCAO2, RESPOSTA_CORRETA) VALUES
+                                                                                                 ('Idade', 'Você tem entre 16 e 69 anos?', 'Sim', 'Não', 'Sim'),
+                                                                                                 ('Peso', 'Você pesa pelo menos X quilos?', 'Sim', 'Não', 'Sim'),
+                                                                                                 ('Saúde Geral', 'Você está se sentindo bem e saudável hoje?', 'Sim', 'Não', 'Sim'),
+                                                                                                 ('Comportamento Sexual', 'Nos últimos 12 meses, você teve mais de um parceiro sexual ou teve relações sexuais com alguém que tem ou suspeita ter HIV/AIDS?', 'Sim', 'Não', 'Não'),
+                                                                                                 ('Histórico de Viagem', 'Você viajou para áreas onde há risco de transmissão de doenças transmitidas pelo sangue nos últimos meses?', 'Sim', 'Não', 'Pode variar'),
+                                                                                                 ('Exposição a Doenças Infecciosas', 'Você teve hepatite, sífilis ou outra doença transmitida pelo sangue?', 'Sim', 'Não', 'Não'),
+                                                                                                 ('Histórico de Transfusões', 'Você recebeu transfusões de sangue ou derivados nos últimos 12 meses?', 'Sim', 'Não', 'Não'),
+                                                                                                 ('Doenças Crônicas', 'Você tem alguma condição médica crônica que pode afetar a elegibilidade?', 'Sim', 'Não', 'Pode variar'),
+                                                                                                 ('Comportamento de Risco para Doenças Transmissíveis pelo Sangue', 'Você já compartilhou agulhas ou praticou sexo sem proteção nos últimos 12 meses?', 'Sim', 'Não', 'Não'),
+                                                                                                 ('Gravidez e Amamentação', 'Se for mulher, está grávida, amamentando ou teve um parto nos últimos seis meses?', 'Sim', 'Não', 'Pode variar');
