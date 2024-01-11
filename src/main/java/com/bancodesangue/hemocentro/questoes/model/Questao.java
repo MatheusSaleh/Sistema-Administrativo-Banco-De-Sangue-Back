@@ -24,4 +24,6 @@ public class Questao {
     private String opcaoD;
 
     private String respostaCorreta;
+
+    private Long score;
 }
