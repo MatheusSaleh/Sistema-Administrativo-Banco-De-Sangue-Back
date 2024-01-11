@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 @Setter
 public class Doador {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @JoinColumn(name = "id_doador")
+    @Column(name = "id_doador")
     private Long id;
 
     private String nomeCompleto;
