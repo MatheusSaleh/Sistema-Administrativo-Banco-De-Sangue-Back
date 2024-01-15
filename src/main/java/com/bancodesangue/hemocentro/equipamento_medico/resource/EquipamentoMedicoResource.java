@@ -1,4 +1,4 @@
-package com.bancodesangue.hemocentro.equipamento_medico.repository;
+package com.bancodesangue.hemocentro.equipamento_medico.resource;
 
 import com.bancodesangue.hemocentro.equipamento_medico.dto.EquipamentoMedicoDTO;
 import com.bancodesangue.hemocentro.equipamento_medico.service.EquipamentoMedicoService;
